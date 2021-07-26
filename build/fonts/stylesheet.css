@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'Brown';
+    src: url('BrownLight.eot');
+    src: url('BrownLight.eot?#iefix') format('embedded-opentype'),
+        url('BrownLight.woff2') format('woff2'),
+        url('BrownLight.woff') format('woff'),
+        url('BrownLight.ttf') format('truetype'),
+        url('BrownLight.svg#BrownLight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Brown';
+    src: url('BrownMedium.eot');
+    src: url('BrownMedium.eot?#iefix') format('embedded-opentype'),
+        url('BrownMedium.woff2') format('woff2'),
+        url('BrownMedium.woff') format('woff'),
+        url('BrownMedium.ttf') format('truetype'),
+        url('BrownMedium.svg#BrownMedium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Brown';
+    src: url('Brown-Regular.eot');
+    src: url('Brown-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Brown-Regular.woff2') format('woff2'),
+        url('Brown-Regular.woff') format('woff'),
+        url('Brown-Regular.ttf') format('truetype'),
+        url('Brown-Regular.svg#Brown-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Brown';
+    src: url('BrownBold.eot');
+    src: url('BrownBold.eot?#iefix') format('embedded-opentype'),
+        url('BrownBold.woff2') format('woff2'),
+        url('BrownBold.woff') format('woff'),
+        url('BrownBold.ttf') format('truetype'),
+        url('BrownBold.svg#BrownBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
