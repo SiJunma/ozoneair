@@ -56,6 +56,21 @@ body {
     font-family: 'Brown', sans-serif;
 }
 
+h1 {
+    font-size: 72px;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
 .btn {
     color: #fff;
     background-color: #3B7CCC;
@@ -70,10 +85,24 @@ body {
     text-transform: uppercase;
     min-width: 250px;
     padding: 0 35px;
+    line-height: 55px;
     text-decoration: none;
+    transition: color 0.3s ease, background-color 0.3s ease;
 
     &:hover {
         color: #fff;
+        background-color: #0C5EC2;
+    }
+
+    &.btn-line-blue {
+        border: 2px solid #4B7CC6;
+        background: transparent;
+        color: #3B7CCC;
+
+        &:hover {
+            background-color: #3B7CCC;
+            color: #fff;
+        }
     }
 }
 
@@ -114,6 +143,7 @@ body {
         position: relative;
         width: 38px;
         margin-right: 35px;
+        cursor: pointer;
 
         &-value {
             display: flex;
@@ -216,8 +246,6 @@ body {
         margin-bottom: 100px;
 
         h1 {
-            font-size: 72px;
-            font-weight: 600;
             margin-bottom: 25px;
         }
 
@@ -313,9 +341,7 @@ body {
 
         h2 {
             color: #3B7CCC;
-            font-size: 36px;
             margin-bottom: 20px;
-            font-weight: 600;
         }
 
         p {
@@ -376,5 +402,82 @@ body {
     img {
         width: 100%;
         height: auto;
+    }
+}
+
+.choose-products {
+    padding: 90px 0;
+
+    h2 {
+        color: #232223;
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        margin-top: 125px;
+    }
+
+    &__item {
+        background: #F4F5F8;
+        border-radius: 4px;
+        width: 49%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 60px 70px;
+        padding-top: 0;
+
+        h3 {
+            color: #3B7CCC;
+            margin-top: -45px;
+        }
+
+        .btn {
+            margin-top: auto;
+        }
+    }
+
+    &__image {
+        position: relative;
+        top: -70px;
+        max-width: 230px;
+        height: 255px;
+
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+    }
+
+    &__content {
+        &-list {
+            margin-top: 25px;
+            border-top: 1px solid #CCCCCC;
+            padding: 10px 10px;
+            list-style: none;
+
+            li {
+                display: flex;
+                padding: 15px 20px;
+                justify-content: space-between;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid #CCCCCC;
+                }
+            }
+        }
+
+        &-title {
+            font-weight: 600;
+            width: 49%;
+        }
+
+        &-value {
+            width: 49%;
+            line-height: 130%;
+        }
     }
 }
