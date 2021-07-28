@@ -528,7 +528,7 @@ h3 {
             margin-top: -45px;
         }
 
-        .btn {
+        .btn:not(.product-card__order-btn) {
             margin-top: auto;
         }
     }
@@ -607,6 +607,8 @@ h3 {
             line-height: 130%;
 
             .confirm {
+                flex-grow: 0;
+                flex-shrink: 0;
                 display: flex;
                 background-color: #31AB72;
                 border-radius: 50%;
@@ -621,6 +623,8 @@ h3 {
             }
 
             .reject {
+                flex-grow: 0;
+                flex-shrink: 0;
                 display: flex;
                 background-color: #CA3F3F;
                 border-radius: 50%;
