@@ -887,6 +887,13 @@ h5 {
         background: transparent;
         border-bottom: 4px solid transparent;
         padding: 0 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #232223;
+        text-decoration: none;
+
+        transition: border-color 0.3s ease;
 
         &.active {
             border-color: #3B7CCC;

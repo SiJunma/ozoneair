@@ -50,6 +50,17 @@ $( document ).ready(function() {
         
     });
     
+    // Taps for product page
+    $('.nav-product-tab__btn').on('click', function (event) {
+        event.preventDefault();
+        
+        $('.nav-product-tab__btn').removeClass('active');
+        $(this).addClass('active');
+        $('.nav-product-content').hide();
+        $($(this).attr('href')).fadeIn();
+    });
+
+    // $('.nav-product-tab__tabs li:first-child a').trigger('click'); // Default
 
 });
 
