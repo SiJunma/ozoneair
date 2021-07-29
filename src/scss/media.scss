@@ -69,6 +69,16 @@
             }
         }
 
+        &-variations {
+            .product-card__content-title {
+                width: 40%;
+            }
+
+            .product-card__content-value {
+                width: 60%;
+            }
+        }
+
         &-variations__item {
             width: 32%;
             padding: 0 20px 45px;
@@ -431,7 +441,7 @@
 
     .faq-section {
         padding-bottom: 70px;
-        
+
         h2 {
             text-align: left;
         }
