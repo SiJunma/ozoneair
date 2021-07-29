@@ -71,7 +71,17 @@ h2 {
 }
 
 h3 {
+    font-size: 34px;
+    font-weight: 600;
+}
+
+h4 {
     font-size: 30px;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 18px;
     font-weight: 600;
 }
 
@@ -533,6 +543,19 @@ h3 {
         }
     }
 
+    &__bage {
+        position: absolute;
+        left: -81px;
+        bottom: 65px;
+        background-color: #3B7CCC;
+        display: block;
+        color: #fff;
+        height: 28px;
+        font-size: 13px;
+        padding: 4px 27px 7px 18px;
+        clip-path: polygon(100% 0px, 88% 50%, 100% 100%, 0px 100%, 0% 0px);
+    }
+
     &__order-btn {
         width: 100%;
     }
@@ -911,6 +934,173 @@ h3 {
         height: 260px;
         display: flex;
         align-items: flex-end;
+    }
+}
+
+.advantages {
+    padding-top: 90px;
+    padding-bottom: 100px;
+
+    &__wrapper {
+        h2 {
+            text-align: center;
+        }
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 70px;
+    }
+
+    &__item {
+        width: 30%;
+
+        &:not(.advantages__item-image) {
+            max-width: 300px;
+        }
+    }
+
+    &__item-image {
+        margin: 0 2em;
+    }
+
+    &__item-piece {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 40px;
+
+        img {
+            margin-right: 20px;
+            margin-top: -20px;
+        }
+
+        h5 {
+            text-transform: uppercase;
+            color: #31353D;
+        }
+    }
+}
+
+//CUSTOM ACCORDION
+
+.custom-accordion {
+    &__btn {
+        color: #353F52;
+        cursor: pointer;
+        padding: 19px;
+        padding-left: 0;
+        padding-right: 30px;
+        width: 100%;
+        text-align: left;
+        border: none;
+        border-bottom: 1px solid #D6D8E0;
+        outline: none;
+        font-weight: normal;
+        font-size: 16px;
+        background-color: transparent;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        transition: padding 0.2s ease;
+
+        h5 {
+            margin: 0;
+        }
+    
+        &::after {
+            display: block;
+            content: '';
+            width: 24px;
+            height: 24px;
+            transition: transform 0.2s ease;
+            position: absolute;
+            right: 0;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M8,17,0,8.5,8,0' transform='translate(3.5 16) rotate(-90)' fill='none' stroke='%23c5c7d3' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' stroke-width='2'/%3E%3C/svg%3E%0A");
+        }
+
+        &:last-of-type {
+            border-bottom: none
+        }
+    }
+
+    .active, 
+    &__btn:hover {
+        font-weight: 500;
+        color: #000000;
+    }
+
+    .active {
+        border-bottom: 1px solid transparent;
+    
+        &::after {
+            transform: rotate(180deg);
+        }
+    
+        & + .custom-accordion__panel {
+            border-bottom: 1px solid #D6D8E0;
+            padding-bottom: 10px;
+
+            &:last-of-type {
+                border-bottom: none
+            }
+        }
+    }
+
+    &__panel {
+        padding-top: 0;
+        background-color: transparent;
+        display: none;
+        color: #353F52;
+    
+        a {
+            color: #353F52;
+        }
+    
+        ul {
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            margin-bottom: 10px;
+    
+            li {
+                display: flex;
+    
+                &:not(:last-child) {
+                    margin-bottom: 7px;
+                }
+    
+                &::before {
+                    content: '⦁';
+                    display: block;
+                    margin-right: 7px;
+                }
+            }
+        }
+    } 
+}
+
+.faq-section {
+
+    .custom-accordion {
+        max-width: 976px;
+        margin: 0 auto;
+        margin-top: 60px;
+    }
+
+    padding-top: 85px;
+    padding-bottom: 90px;
+
+    &_gray {
+        background-color: #F4F5F8;
+    }
+
+    h2 {
+        color: #31353D;
+        text-align: center;
     }
 }
 
