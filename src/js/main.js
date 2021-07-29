@@ -1,4 +1,30 @@
 $( document ).ready(function() {
+
+    $('.nav-product-tab__tabs').slick({
+        infinite: false,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: false,
+        variableWidth: true,
+
+        responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+          ]
+    });
     
     $('.header-slider').slick({
         infinite: true,
