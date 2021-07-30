@@ -92,8 +92,8 @@ $( document ).ready(function() {
         
         $('.nav-product-tab__btn').removeClass('active');
         $(this).addClass('active');
-        $('.nav-product-content').hide();
-        $($(this).attr('href')).fadeIn();
+        $('.nav-product-content').removeClass('active');
+        $($(this).attr('href')).addClass('active');
     });
 
     // $('.nav-product-tab__tabs li:first-child a').trigger('click'); // Default

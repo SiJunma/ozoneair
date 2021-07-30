@@ -428,6 +428,23 @@ h5 {
     }
 }
 
+.nav-product-content {
+    display: block;
+    height: 0;
+    visibility: none;
+    overflow: hidden;
+    opacity: 0;
+
+    transition: opacity 0.3s ease;
+
+    &.active {
+        display: block;
+        height: auto;
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
 .header-product {
     .slick-list {
         padding-bottom: 50px;
