@@ -58,6 +58,16 @@ $( document ).ready(function() {
             toggle = true;
         }
     });
+
+    $('.js-hdiw-section__btn-more').click(evt => {
+        evt.preventDefault();
+        $('.js-additional-section').fadeIn();
+    });
+
+    $('.js-guide-title-section__close-btn').click(evt => {
+        evt.preventDefault();
+        $('.js-additional-section').fadeOut();
+    });
     
     //ACCORDEON
 
