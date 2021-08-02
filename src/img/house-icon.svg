@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="52" height="52" viewBox="0 0 52 52">
+  <defs>
+    <clipPath id="clip-house-icon">
+      <rect width="52" height="52"/>
+    </clipPath>
+  </defs>
+  <g id="house-icon" clip-path="url(#clip-house-icon)">
+    <g id="Group_18810" data-name="Group 18810" transform="translate(-28 -37)">
+      <path id="Path_120" data-name="Path 120" d="M46,105H86.985v33.337H46Z" transform="translate(-11.658 -53.294)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path_121" data-name="Path 121" d="M34.342,51.706H32L37.019,41h35.3L77,51.706H75.16" transform="translate(0 0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <rect id="Rectangle_221" data-name="Rectangle 221" width="7.333" height="10.614" transform="translate(63.45 62.078)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <line id="Line_54659" data-name="Line 54659" x2="7.361" transform="translate(63.45 66.595)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <rect id="Rectangle_222" data-name="Rectangle 222" width="7.333" height="10.614" transform="translate(38.022 62.078)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <line id="Line_54660" data-name="Line 54660" x2="7.361" transform="translate(38.022 66.595)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path_122" data-name="Path 122" d="M137,152h10.037v16.729H137Z" transform="translate(-87.435 -92.431)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path_123" data-name="Path 123" d="M119,252h16.227v3.68H119Z" transform="translate(-72.446 -175.703)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <rect id="Rectangle_223" data-name="Rectangle 223" width="21.47" height="5.066" transform="translate(43.71 79.978)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

@@ -382,6 +382,17 @@
         height: 340px;
     }
 
+    .trigger-cards__slide-desc {
+        font-size: 16px;
+    }
+
+    .trigger-cards {
+        padding-top: 70px;
+    }
+    .trigger-cards__title {
+        padding-bottom: 40px;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -584,6 +595,21 @@
     .faq-section h2 {
         text-align: left;
     }
+
+    .trigger-cards .slick-arrow {
+        &.slick-prev {
+            left: 30px;
+        }
+
+        &.slick-next {
+            right: 30px;
+        }
+    }
+
+    .trigger-cards__slide {
+        height: 500px;
+        width: 320px;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -713,6 +739,12 @@
     .guide-half-section__image {
         height: 250px;
     }
+
+    .header-product .header-slide_hdiw {
+        height: auto;
+        padding: 40px 10px;
+    }
+    
 }
 
 @media screen and (max-width: 526px)  {
@@ -747,6 +779,10 @@
 
     .hdiw-treatment__media {
         height: 320px;
+    }
+
+    .trigger-cards .slick-arrow {
+        bottom: 20%;
     }
 }
 

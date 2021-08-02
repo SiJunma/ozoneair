@@ -1,5 +1,34 @@
 $( document ).ready(function() {
 
+    $('.trigger-cards__slider').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: true,
+        variableWidth: true,
+        centerMode: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+
+        responsive: [
+            {
+              breakpoint: 1200,
+              centerMode: true,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 992,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+              }
+            }
+          ]
+    });
+
     $('.nav-product-tab__tabs').slick({
         infinite: false,
         slidesToShow: 3,
