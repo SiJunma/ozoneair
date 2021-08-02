@@ -54,6 +54,26 @@ $( document ).ready(function() {
             }
           ]
     });
+
+    $('.product-page-specs__tabs-btns__slider').slick({
+      infinite: false,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      dots: false,
+      arrows: false,
+      variableWidth: true,
+
+      responsive: [
+          {
+            breakpoint: 576,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          },
+          
+        ]
+  });
     
     $('.header-slider').slick({
         infinite: true,
@@ -75,7 +95,8 @@ $( document ).ready(function() {
         evt.preventDefault();
         $('.js-navbar__primary-menu').fadeToggle();
     });
-    
+
+    //for nav-menu toggle-appear when resize
     let toggle = $(window).width() < 576;
     $(window).on('resize', function (event) {
     
@@ -99,7 +120,6 @@ $( document ).ready(function() {
     });
     
     //ACCORDEON
-
     $(".custom-accordion__btn").on("click", function(e) {
     
         e.preventDefault();
@@ -115,17 +135,23 @@ $( document ).ready(function() {
         
     });
     
-    // Taps for product page
-    $('.nav-product-tab__btn').on('click', function (event) {
+    // Tabs for product landing page
+    tabs('.nav-product-tab__btn', '.nav-product-content');
+
+    // Tabs for product page
+    tabs('.product-page-specs__tabs-btn', '.product-page-specs__tabs-content__panel');
+
+    //custom-tabs
+    function tabs (btn, panel) {
+      $(btn).on('click', function (event) {
         event.preventDefault();
         
-        $('.nav-product-tab__btn').removeClass('active');
+        $(btn).removeClass('active');
         $(this).addClass('active');
-        $('.nav-product-content').removeClass('active');
+        $(panel).removeClass('active');
         $($(this).attr('href')).addClass('active');
-    });
-
-    // $('.nav-product-tab__tabs li:first-child a').trigger('click'); // Default
+      });
+    }
 
 });
 
