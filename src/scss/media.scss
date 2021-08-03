@@ -7,13 +7,15 @@
         padding: 0 6em;
     }
 
-    .guide-half-section__content p {
+    .guide-half-section-text {
         margin-left: 5em;
     }
 
-    .guide-half-section__item:nth-child(even) .guide-half-section__content p {
-        margin-right: 5em;
-        margin-left: 0;
+    .guide-half-section__item:nth-child(even) {
+        .guide-half-section-text {
+            margin-right: 5em;
+            margin-left: 0;
+        }
     }
 
     .product-page__presentation {
@@ -149,18 +151,20 @@
     .guide-half-section__content {
         justify-content: center;
         align-items: center;
-
-        p {
-            margin: 0;
-            max-width: 75%;
-        }
     }
 
-    .guide-half-section__item:nth-child(even) .guide-half-section__content {
-        justify-content: center;
-        align-items: center;
+    .guide-half-section-text {
+        margin: 0;
+        max-width: 75%;
+    }
 
-        p {
+    .guide-half-section__item:nth-child(even) {
+        .guide-half-section__content {
+            justify-content: center;
+            align-items: center;
+        }
+
+        .guide-half-section-text {
             margin: 0;
             max-width: 75%;
         }
@@ -670,6 +674,11 @@
         }
     }
 
+    .header-product .header-slide_hdiw {
+        height: auto;
+        padding: 40px 10px;
+    }
+
     .product-page-triggers {
         margin-top: 0;
     }
@@ -920,10 +929,6 @@
     .guide-used__list-couner {
         margin-right: 20px;
     }
-    
-    .header-product .header-slide_hdiw {
-        height: 400px;
-    }
 
     .guide-half-section__item:nth-child(even) .guide-half-section__image {
         height: 250px;
@@ -931,11 +936,6 @@
 
     .guide-half-section__image {
         height: 250px;
-    }
-
-    .header-product .header-slide_hdiw {
-        height: auto;
-        padding: 40px 10px;
     }
 
     .product-page__presentation-single-slide {
@@ -1123,20 +1123,22 @@
         text-align: left;
     }
 
-    .guide-half-section__item:nth-child(even) .guide-half-section__content {
-        padding: 30px 0;
+    .guide-half-section__item:nth-child(even) {
+        .guide-half-section__content {
+            padding: 30px 0;
+        }
 
-        p {
+        .guide-half-section-text {
             max-width: 85%;
         }
     } 
 
     .guide-half-section__content {
         padding: 30px 0;
+    }
 
-        p {
-            max-width: 85%;
-        }
+    .guide-half-section-text {
+        max-width: 85%;
     }
 
     .guide-used__title {
