@@ -1894,7 +1894,7 @@ h5 {
         padding: 0;
         display: flex;
         justify-content: space-between;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
 
         &:last-of-type {
             margin: 0;
@@ -1905,6 +1905,8 @@ h5 {
             font-size: 14px;
             line-height: 120%;
             align-items: center;
+            margin: 5px;
+            flex-shrink: 0;
 
             img {
                 object-fit: contain;

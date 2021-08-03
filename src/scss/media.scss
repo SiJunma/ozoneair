@@ -192,6 +192,17 @@
     .product-page__information-card {
         max-width: 320px;
         padding: 35px 30px 45px;
+        padding-bottom: 30px;
+    }
+
+    .product-page__information-logos_text {
+        flex-direction: column;
+
+        svg {
+            margin-top: 3px;
+            margin-right: auto;
+            margin-bottom: 7px;
+        }
     }
 
     .product-page__presentation-navigation-slider {
@@ -231,6 +242,13 @@
 
     .tech-specs__table tr td:last-child {
         padding-left: 30px;
+    }
+
+    .product-page__information-logos:last-of-type {
+        flex-wrap: wrap;
+        li {
+            margin-bottom: 20px;
+        }
     }
 }
 
@@ -490,6 +508,7 @@
     .product-page__information-card {
         max-width: 490px;
         padding: 45px 70px 65px;
+        padding-bottom: 30px;
     }
 
     .product-page__presentation-single-slide {
@@ -935,6 +954,7 @@
     .product-page__information-card {
         max-width: 490px;
         padding: 45px 50px 65px;
+        padding-bottom: 30px;
     }
     
 }
@@ -1133,6 +1153,7 @@
 
     .product-page__information-card {
         padding: 35px 30px 45px;
+        padding-bottom: 20px;
     }
 
     .product-page-specs__tabs-btn {
