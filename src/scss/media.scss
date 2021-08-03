@@ -18,6 +18,15 @@
 }
 
 @media screen and (max-width: 1200px) {
+
+    body {
+        padding-top: 76px;
+    }
+
+    .nav-product-tab {
+        top: 76px;
+    }
+
     .header {
         
         &-slide {
@@ -198,6 +207,10 @@
             }
             
         }
+    }
+
+    .nav-product-tab+.nav-product-content {
+        margin-top: 60px;
     }
 
     h1 {
@@ -691,6 +704,7 @@
         &__wrapper {
             flex-wrap: wrap;
             height: auto;
+            min-height: 76px;
             padding: 20px 0;
         }
 

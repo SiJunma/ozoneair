@@ -58,6 +58,7 @@ body {
     font-size: 16px;
     color: #232223;
     font-family: 'Brown', sans-serif;
+    padding-top: 95px;
 }
 
 h1 {
@@ -172,6 +173,11 @@ h5 {
 .navbar {
     background-color: #232223;
     color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
 
     &__burger-btn {
         display: none;
@@ -885,6 +891,15 @@ h5 {
 
 .nav-product-tab {
     background-color: #F2F2F2;
+    position: fixed;
+    left: 0;
+    top: 95px;
+    width: 100%;
+    z-index: 9;
+
+    & + .nav-product-content {
+        margin-top: 94px;
+    }
 
     &__title {
         color: #3B7CCC;
@@ -1719,4 +1734,171 @@ h5 {
        }
     }
 
+}
+
+.product-page {
+    padding-top: 70px;
+    padding-bottom: 100px;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__presentation {
+        width: 825px;
+        display: flex;
+        align-items: center;
+
+        &-navigation-slide {
+            width: 80px;
+            height: 80px;
+            border-radius: 5px;
+            overflow: hidden;
+            margin: 10px 0;
+            cursor: pointer;
+            border: none;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
+        &-navigation-slider {
+            width: 100px;
+            height: 600px;
+            flex-shrink: 0;
+
+            .slick-slide.active .product-page__presentation-navigation-slide {
+                border: 2px solid #92CDCF;
+            }
+        }
+
+        &-single-slider {
+            width: 100%;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
+        &-single-slide {
+            width: 600px;
+            height: 600px;
+            margin: 0 auto;
+        }
+    }
+
+    &__information {
+        width: auto;
+        position: relative;
+        z-index: 1;
+        flex-shrink: 0;
+    }
+
+    &__information-card {
+        border-radius: 8px;
+        box-shadow: 0px 3px 6px rgba($color: #000000, $alpha: .12);
+        padding: 55px 65px;
+        max-width: 470px;
+        margin-left: auto;
+
+        h3 {
+            color: #3B7CCC;
+        }
+    }
+
+    &__information-line {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 15px;
+    }
+    
+    &__information-availability {
+        display: flex;
+        align-items: center;
+
+        .confirm {
+            flex-grow: 0;
+            flex-shrink: 0;
+            display: flex;
+            background-color: #31AB72;
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            width: 18px;
+            height: 18px;
+            font-size: 0;
+            margin-right: 7px;
+            background-repeat: no-repeat;
+            background-position: center 5px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10.027' height='7.854' viewBox='0 0 10.027 7.854'%3E%3Cg transform='translate(1.413 1.414)'%3E%3Cpath d='M0,3.215,2.057,5.44,7.2,0' fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' stroke-width='2'/%3E%3C/g%3E%3C/svg%3E%0A");
+        }
+    }
+
+    &__information-desc {
+        font-weight: 300;
+        color: #232223;
+        border-top: 1px solid #CCCCCC;
+        border-bottom: 1px solid #CCCCCC;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    &__information-list {
+        padding: 0;
+        padding-left: 20px;
+        margin-bottom: 40px;
+
+        li {
+            margin-bottom: 10px;
+            line-height: 120%;
+        }
+
+        &__btn-buy {
+            margin-bottom: 40px;
+        }
+    }
+
+
+
+    &__information-logos {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+
+        &:last-of-type {
+            margin: 0;
+        }
+
+        li {
+            display: flex;
+            font-size: 14px;
+            line-height: 120%;
+            align-items: center;
+
+            img {
+                object-fit: contain;
+            }
+        }
+
+        &_text {
+            svg {
+                margin-top: 3px;
+                margin-right: 9px;
+                margin-bottom: 16px;
+            }
+        }
+    }
 }
