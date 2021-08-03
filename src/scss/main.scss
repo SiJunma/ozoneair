@@ -1841,6 +1841,24 @@ h5 {
             background-position: center 5px;
             background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10.027' height='7.854' viewBox='0 0 10.027 7.854'%3E%3Cg transform='translate(1.413 1.414)'%3E%3Cpath d='M0,3.215,2.057,5.44,7.2,0' fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' stroke-width='2'/%3E%3C/g%3E%3C/svg%3E%0A");
         }
+
+        .reject {
+            flex-grow: 0;
+            flex-shrink: 0;
+            display: flex;
+            background-color: #CA3F3F;
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            width: 18px;
+            height: 18px;
+            font-size: 0;
+
+            margin-right: 7px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7.658' height='7.656' viewBox='0 0 7.658 7.656'%3E%3Cpath d='M-8588.634,7.778l-2.122-2.122-2.123,2.122a1,1,0,0,1-1.415,0,1,1,0,0,1,0-1.415l2.123-2.122-2.121-2.121a1,1,0,0,1,0-1.413,1,1,0,0,1,1.413,0l2.121,2.121,2.122-2.121a1,1,0,0,1,1.415,0,1,1,0,0,1,0,1.413l-2.122,2.122,2.122,2.121a1,1,0,0,1,0,1.415,1,1,0,0,1-.707.293A.992.992,0,0,1-8588.634,7.778Z' transform='translate(8594.587 -0.415)' fill='%23fff'/%3E%3C/svg%3E%0A");
+        }
     }
 
     &__information-desc {
