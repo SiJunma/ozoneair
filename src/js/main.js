@@ -20,6 +20,38 @@ $( document ).ready(function() {
     swipeToSlide: true,
     verticalSwiping: true,
     focusOnSelect: false,
+
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          verticalSwiping: false,
+          vertical: false,
+        }
+      },
+
+      {
+        breakpoint: 465,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          verticalSwiping: false,
+          vertical: false,
+        }
+      },
+
+      {
+        breakpoint: 369,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          verticalSwiping: false,
+          vertical: false,
+        }
+      },
+    ]
   });
 
   $('.product-page__presentation-navigation-slider .slick-slide').on('click', function (event) {
@@ -37,11 +69,11 @@ $( document ).ready(function() {
       centerMode: true,
       autoplay: true,
       autoplaySpeed: 3000,
+      focusOnSelect: true,
 
       responsive: [
           {
             breakpoint: 1200,
-            centerMode: true,
             settings: {
               slidesToShow: 3,
               slidesToScroll: 1
@@ -90,17 +122,6 @@ $( document ).ready(function() {
     dots: false,
     arrows: false,
     variableWidth: true,
-
-    responsive: [
-        {
-          breakpoint: 576,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1
-          }
-        },
-        
-      ]
   });
   
   $('.header-slider').slick({
@@ -109,6 +130,8 @@ $( document ).ready(function() {
       slidesToScroll: 1,
       dots: true,
       arrows: false,
+      autoplay: true,
+      autoplaySpeed: 3000,
   });
   
   $('.product-main__slider').slick({

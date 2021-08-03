@@ -15,6 +15,25 @@
         margin-right: 5em;
         margin-left: 0;
     }
+
+    .product-page__presentation {
+        width: 715px;
+    }
+
+    .product-page__information-card {
+        max-width: 400px;
+        padding: 45px 45px;
+        padding-bottom: 55px;
+    }
+
+    .product-page__presentation-single-slide {
+        width: 500px;
+        height: 500px;
+    }
+
+    .product-page__presentation-navigation-slider {
+        height: 500px;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -160,6 +179,59 @@
         height: 420px;
     }
 
+    .product-page__presentation {
+        width: 615px;
+    }
+
+    .product-page__presentation-single-slide {
+        width: 495px;
+        height: 495px;
+        margin: 0;
+    }
+
+    .product-page__information-card {
+        max-width: 320px;
+        padding: 35px 30px 45px;
+    }
+
+    .product-page__presentation-navigation-slider {
+        height: 495px;
+    }
+
+    .product-page__presentation-navigation-slide {
+        margin: 9px 0;
+    }
+
+    .product-page-specs__tabs-content {
+        padding: 30px 35px;
+    }
+
+    .product-page-specs__tabs-btn {
+        width: 195px;
+        height: 58px;
+        padding-left: 30px;
+        font-size: 28px;
+    }
+
+    .tech-specs__table {
+        width: 60%;
+
+        tr td {
+            padding: 10px 15px;
+        }
+    }
+
+    .tech-specs__table-link {
+        height: 40px;
+    }
+
+    .tech-specs__table tr td:first-child {
+        width: 40%;
+    }
+
+    .tech-specs__table tr td:last-child {
+        padding-left: 30px;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -406,6 +478,58 @@
         padding-bottom: 40px;
     }
 
+    .product-page__wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-page__information {
+        margin-top: 50px;
+    }
+
+    .product-page__information-card {
+        max-width: 490px;
+        padding: 45px 70px 65px;
+    }
+
+    .product-page__presentation-single-slide {
+        margin-left: auto;
+    }
+
+    .product-page {
+        padding-bottom: 70px;
+    }
+
+    .product-page-specs {
+        padding-top: 70px;
+    }
+
+    .product-page-specs__tech-specs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tech-specs__table {
+        width: 100%;
+    }
+
+    .product-page-specs__tech-image {
+        margin-top: 40px;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .product-page-specs__tech-image__product {
+        img {
+            position: static;
+        }
+    }
+
+    .product-page-specs__tabs-container {
+        max-width: 1170px;
+        margin: 34px auto 0;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -623,6 +747,42 @@
         height: 500px;
         width: 320px;
     }
+
+    .product-page__presentation {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .product-page__presentation-navigation-slider {
+        margin: 0 auto;
+        margin-top: 30px;
+        height: 80px;
+        width: 100%;
+    }
+
+    .product-page__presentation-navigation-slide {
+        margin: 0 10px;
+    }
+
+    .product-page__presentation-single-slide {
+        margin-right: auto;
+    }
+
+    .product-page-specs__tabs-btn {
+        width: 127px;
+        height: 50px;
+        padding-left: 20px;
+        font-size: 22px;
+    }
+
+    .product-page-specs__tabs-content {
+        padding: 30px 20px;
+    }
+
+    .tech-specs__table-link_download::after {
+        margin-top: 2px;
+    }
+
 }
 
 @media screen and (max-width: 576px) {
@@ -758,6 +918,24 @@
         height: auto;
         padding: 40px 10px;
     }
+
+    .product-page__presentation-single-slide {
+        width: 100%;
+        height: 100vw;
+    }
+
+    .product-page__presentation-navigation-slider {
+        margin: 0px auto 0;
+    }
+
+    .product-page__presentation-navigation-slide {
+        margin: 0 3px;
+    }
+
+    .product-page__information-card {
+        max-width: 490px;
+        padding: 45px 50px 65px;
+    }
     
 }
 
@@ -797,6 +975,16 @@
 
     .trigger-cards .slick-arrow {
         bottom: 20%;
+    }
+
+    .product-page__information-card {
+        h3 {
+            font-size: 24px;
+        }
+    }
+
+    .product-page__information-desc {
+        line-height: 122%;
     }
 }
 
@@ -865,6 +1053,49 @@
         padding: 30px;
     }
 
+    .tech-specs__table tr td:first-child {
+        width: 130px;
+    }
+
+    .tech-specs__table tr td:last-child {
+        padding-left: 20px;
+    }
+
+    .product-page {
+        padding-top: 40px;
+    }
+
+    .tech-specs__table-link_download {
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width: 412px) {
+    .tech-specs__table {
+
+        tr {
+            flex-direction: column;
+            align-items: center;
+            padding: 10px 0;
+        }
+    }
+
+    .tech-specs__table tr td:first-child,
+    .tech-specs__table tr td:last-child {
+        text-align: center;
+        width: 100%;
+        border-right: 0;
+        padding: 2px 15px;
+    }
+
+    .tech-specs__table-link_download {
+        justify-content: center;
+    }
+
+    .product-page-specs__tabs-btn {
+        width: 107px;
+    }
 }
 
 @media screen and (max-width: 382px) {
@@ -898,6 +1129,18 @@
 
     .hdiw-treatment__title {
         text-align: left;
+    }
+
+    .product-page__information-card {
+        padding: 35px 30px 45px;
+    }
+
+    .product-page-specs__tabs-btn {
+        width: 99px;
+        padding-left: 13px;
+
+        height: 47px;
+        font-size: 20px;
     }
 }
 

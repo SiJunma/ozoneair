@@ -1749,7 +1749,7 @@ h5 {
     &__presentation {
         width: 825px;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
 
         &-navigation-slide {
             width: 80px;
