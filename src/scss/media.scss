@@ -36,6 +36,24 @@
     .product-page__presentation-navigation-slider {
         height: 500px;
     }
+
+    .guide-half-section.guide-half-section_content-revert {
+        .guide-half-section__item {
+            .guide-half-section-text {
+                margin: 0 auto;
+            }
+        }
+
+        .guide-half-section__item:nth-child(even) {
+            .guide-half-section-text {
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .partners-section__list .slick-slide {
+        margin: 0 40px;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -253,6 +271,19 @@
         li {
             margin-bottom: 20px;
         }
+    }
+
+    .partners-section__list .slick-slide {
+        margin: 0 30px;
+    }
+
+    .about-section__content {
+        width: 50%;
+        padding-right: 60px;
+    }
+
+    .guide-half-section.guide-half-section_height-auto .guide-half-section__content {
+        padding: 60px 0;
     }
 }
 
@@ -553,6 +584,23 @@
         margin: 34px auto 0;
     }
 
+    .about-section__wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-section__content {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 40px;
+        max-width: 500px;
+    }
+
+    .about-section__icons {
+        width: 100%;
+        max-width: 560px;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -811,6 +859,22 @@
         margin-top: 2px;
     }
 
+    .guide-half-section.guide-half-section_height-auto .guide-half-section__image {
+        height: 340px;
+    }
+
+    .guide-half-section_content-revert .guide-half-section__item {
+        flex-direction: column;
+    }
+
+    .about-section {
+        padding-top: 70px;
+    }
+
+    .about-section__wrapper {
+        padding-bottom: 60px;
+    }
+
 }
 
 @media screen and (max-width: 576px) {
@@ -956,6 +1020,11 @@
         padding: 45px 50px 65px;
         padding-bottom: 30px;
     }
+
+    .guide-half-section__item:nth-child(even) .guide-half-section-text,
+    .guide-half-section-text {
+        max-width: 86%;
+    }
     
 }
 
@@ -1005,6 +1074,15 @@
 
     .product-page__information-desc {
         line-height: 122%;
+    }
+
+    .about-section__icons-list {
+        flex-direction: column;
+        align-items: center;
+
+        li:not(:last-child) {
+            margin-bottom: 50px;
+        }
     }
 }
 

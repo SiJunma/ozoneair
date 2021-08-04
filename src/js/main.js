@@ -1,14 +1,48 @@
 $( document ).ready(function() {
 
   $('.partners-section__list').slick({
-    slidesToShow: 6,
+    slidesToShow: 5,
     slidesToScroll: 2,
     dots: false,
     infinite: true,
     arrows: false,
     autoplay: true,
     autoplaySpeed: 3000,
-    variableWidth: true,
+    variableWidth: false,
+
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+        }
+      },
+
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        }
+      },
+
+      {
+        breakpoint: 526,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },
+
+      {
+        breakpoint: 412,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      },
+    ]
     
   });
 

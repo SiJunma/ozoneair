@@ -2037,7 +2037,7 @@ h6 {
             flex-direction: column;
             align-items: center;
             max-width: 180px;
-            width: 180px;   
+            width: 160px;   
             text-align: center;
         }
 
@@ -2090,7 +2090,11 @@ h6 {
         display: flex;
         align-items: center;
         padding: 40px 0;
-        justify-content: space-between;
+
+        .slick-slide {
+            margin: 0 50px;
+            padding: 0;
+        }
     }
 
     &__list-item {
@@ -2098,6 +2102,16 @@ h6 {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 0 50px;
+        padding: 0;
+        flex-shrink: 0;
+        width: 100%;
+
+        img {
+            width: auto;
+            height: auto;
+            max-height: 100%;
+            max-width: 100%;
+            object-fit: contain;
+        }
     }
 }
