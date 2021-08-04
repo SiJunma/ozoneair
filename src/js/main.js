@@ -1,5 +1,17 @@
 $( document ).ready(function() {
 
+  $('.partners-section__list').slick({
+    slidesToShow: 6,
+    slidesToScroll: 2,
+    dots: false,
+    infinite: true,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    variableWidth: true,
+    
+  });
+
   $('.product-page__presentation-single-slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,

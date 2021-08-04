@@ -82,6 +82,11 @@ h4 {
 }
 
 h5 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+h6 {
     font-size: 18px;
     font-weight: 600;
 }
@@ -1041,7 +1046,7 @@ h5 {
             margin-top: -20px;
         }
 
-        h5 {
+        h6 {
             text-transform: uppercase;
             color: #31353D;
         }
@@ -1071,7 +1076,7 @@ h5 {
         position: relative;
         transition: padding 0.2s ease;
 
-        h5 {
+        h6 {
             margin: 0;
         }
     
@@ -1279,11 +1284,57 @@ h5 {
                 margin-right: 100px;
             }
         }
+
+        &.guide-half-section__item_gray {
+            background-color: #F4F5F8!important;
+        }
+    }
+
+    &.guide-half-section_content-revert {
+        .guide-half-section__item {
+            &:nth-child(even) {
+    
+                .guide-half-section-text {
+                    margin-right: auto;
+                    margin-left: 100px;
+                }
+            }
+
+            .guide-half-section-text {
+                margin-left: auto;
+                margin-right: 100px;
+            }
+        }
     }
 
     &.guide-half-section_gray {
         .guide-half-section__item {
             background-color: #F4F5F8;
+        }
+
+        .guide-half-section__item:nth-child(even) {
+            background-color: #F4F5F8;
+        }
+    }
+
+    &.guide-half-section_white {
+        .guide-half-section__item {
+            background-color: #FFFFFF;
+        }
+
+        .guide-half-section__item:nth-child(even) {
+            background-color: #FFFFFF;
+        }
+    }
+
+    &.guide-half-section_height-auto {
+        .guide-half-section__image,
+        .guide-half-section__content {
+            height: auto;
+        }
+
+        .guide-half-section__content {
+            padding: 90px 0;
         }
     }
 
@@ -1299,7 +1350,19 @@ h5 {
         max-width: 470px;
         margin-left: 100px;
 
+        small {
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 13px;
+        }
+
         h5 {
+            color: #3B7CCC;
+            margin-bottom: 20px;
+            line-height: 140%;
+        }
+
+        h6 {
             text-transform: uppercase;
             margin-bottom: 13px;
         }
@@ -1940,5 +2003,101 @@ h5 {
                 margin-bottom: 16px;
             }
         }
+    }
+}
+
+.about-section {
+    padding-top: 100px;
+
+    &__wrapper {
+        display: flex;
+        padding-bottom: 80px;
+        border-bottom: 1px solid #C5C7D3;
+    }
+    
+    h2 {
+        color: #3B7CCC;
+        margin-bottom: 15px;
+    }
+
+    &__content {
+        width: 50%;
+        padding-right: 130px;
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__icons {
+        width: 50%;
+
+        &-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 180px;
+            width: 180px;   
+            text-align: center;
+        }
+
+        &-list {
+            padding: 0;
+            list-style: none;
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &-value {
+            font-size: 36px;
+            font-weight: 600;
+            color: #3B7CCC;
+            margin-bottom: 8px;
+        }
+
+        &-text {
+            color: #7A7D97;
+        }
+
+        &-icon {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 15px;
+            height: 50px;
+
+            img {
+                max-width: 90%;
+            }
+        }
+    }
+}
+
+.partners-section {
+    padding-top: 60px;
+    padding-bottom: 50px;
+
+    h4 {
+        text-align: center;
+        color: #3B7CCC;
+        margin-bottom: 0;
+    }
+
+    &__list {
+        padding: 0;
+        list-style: none;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        padding: 40px 0;
+        justify-content: space-between;
+    }
+
+    &__list-item {
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 50px;
     }
 }
