@@ -330,6 +330,12 @@ h6 {
         }
     }
 
+    &-contactus {
+        .header__wrapper {
+            padding-bottom: 40px;
+        }
+    }
+
     &-slider {
         position: relative;
         display: flex;
@@ -2246,4 +2252,10 @@ h6 {
             margin-left: auto;
         }
     }
+}
+
+.contact-section {
+    background: #F4F5F8;
+    border: 4px;
+    overflow: hidden;
 }
