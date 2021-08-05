@@ -2215,7 +2215,17 @@ h6 {
         margin: 0 auto;
         display: flex;
         justify-content: center;
-    }   
+        color: #7A7D97;
+    } 
+    
+    &__container {
+        display: flex;
+        align-items: center;
+
+        .news-pagination__item:first-child {
+            margin-left: 0;
+        }
+    }
 
     &__item {
         color: #7A7D97;
