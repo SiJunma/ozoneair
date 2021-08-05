@@ -1347,7 +1347,7 @@ h6 {
     }
 
     &-text {
-        max-width: 470px;
+        max-width: 540px;
         margin-left: 100px;
 
         small {
@@ -2113,5 +2113,23 @@ h6 {
             max-width: 100%;
             object-fit: contain;
         }
+    }
+}
+
+.terms-page {
+    padding-top: 110px;
+    padding-bottom: 110px;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    a {
+        color: #31353D;
+    }
+
+    a[href^="mailto:"] {
+       color: #3B7CCC; 
     }
 }
