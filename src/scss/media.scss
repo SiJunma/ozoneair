@@ -36,10 +36,12 @@
         height: 500px;
     }
 
-    
-
     .partners-section__list .slick-slide {
         margin: 0 40px;
+    }
+
+    .contact-locations__offices-item span {
+        display: inline;
     }
 }
 
@@ -271,6 +273,40 @@
 
     .guide-half-section.guide-half-section_height-auto .guide-half-section__content {
         padding: 60px 0;
+    }
+
+    .contact-section__form {
+        width: 60%;
+        padding: 40px 30px 40px 40px;
+    }
+
+    .contact-section__contacts {
+        padding: 55px 50px 50px;
+    }
+
+    .contact-locations__offices-item {
+        width: 50%;
+        
+        span {
+            display: block;
+        }
+    }
+
+    .contact-locations__offices-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .contact-locations__offices-item:nth-child(2n) {
+        border: none;
+    }
+
+    .contact-locations__offices-item:nth-child(3n) {
+        padding-left: 0;
+        padding-top: 18px;
+    }
+
+    .contact-locations__offices-item:last-child {
+        padding-top: 18px;
     }
 }
 
@@ -635,6 +671,15 @@
         padding-bottom: 0px;
     }
 
+    .contact-section__contacts,
+    .contact-section__form {
+        width: 50%;
+    }
+
+    .contact-section__contacts {
+        padding: 45px 40px 40px;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -917,6 +962,33 @@
         max-width: 570px;
     }
 
+    .contact-section__wrapper {
+        flex-direction: column;
+    }
+
+    .contact-section__contacts, .contact-section__form {
+        width: 100%;
+    }
+
+    .contact-section__form {
+        padding-right: 40px;
+    }
+
+    .contact-locations {
+        padding-top: 20px;
+    }
+
+    .header-contactus {
+        .header__wrapper {
+            padding-bottom: 70px;
+            padding-top: 40px;
+        }
+    }
+
+    .contact-section__form-submit {
+        margin-top: 20px;
+    }
+
 }
 
 @media screen and (max-width: 576px) {
@@ -1130,6 +1202,37 @@
         li:not(:last-child) {
             margin-bottom: 50px;
         }
+    }
+
+    .contact-locations__offices-wrapper {
+        flex-direction: column;
+    }
+
+    .contact-locations__offices-item {
+        width: 100%;
+        border: none;
+        margin-bottom: 15px;
+    }
+
+    .contact-locations__offices-item:nth-child(2n) {
+        padding-left: 0;
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+
+    .contact-locations__offices-item:nth-child(3n) {
+        padding-left: 0;
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+
+    .contact-locations__map {
+        margin-bottom: 30px;
+    }
+
+    .contact-locations {
+        padding-bottom: 70px;
+        padding-top: 0;
     }
 }
 
