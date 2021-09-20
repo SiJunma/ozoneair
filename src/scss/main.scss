@@ -2521,9 +2521,9 @@ h6 {
         align-items: stretch;
 
         li {
-            flex-basis: 47%;
+            // flex-basis: 47%;
             margin: 15px;
-            flex: 1;
+            // flex: 1;
             display: flex;
             justify-content: center;
         }
@@ -2628,9 +2628,32 @@ h6 {
             padding-left: 15px;
             padding-right: 25px;
             margin-left: 10px;
+            font-weight: 300;
+            appearance: none;
+            background-color: transparent;
+            cursor: inherit;
+
+            &:hover {
+                border: 1px solid #707070;
+            }
         }
         display: flex;
         align-items: center;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: '';
+            display: block;
+            right: 7px;
+            width: 11px;
+            height: 5px;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11.453' height='5.667' viewBox='0 0 11.453 5.667'%3E%3Cpath d='M9385,14075.43l5.387,4.629,5.415-4.629' transform='translate(-9384.674 -14075.05)' fill='none' stroke='%23707070' stroke-width='1'/%3E%3C/svg%3E%0A");
+            z-index: -1;
+        }
     }
 
     .btn.btn-green {
