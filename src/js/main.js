@@ -250,5 +250,31 @@ $( document ).ready(function() {
     });
   }
 
+  //btn open popup
+  function btnPopup (btn) {
+    $(btn).on('click', function (event) {
+      event.preventDefault();
+
+      let target = event.target.getAttribute('data-target');
+      $(target).fadeIn();
+      $('body').addClass('fixed');
+    });
+  }
+
+  btnPopup('.js-btn-popup');
+
+  //btn-close close popup
+  function btnClose(btn) {
+    $(btn).on('click', function (event) {
+      event.preventDefault();
+
+      let target = event.target.closest('.popup');
+      $(target).fadeOut();
+      $('body').removeClass('fixed');
+    })
+  }
+
+  btnClose('.popup__close');
+
 });
 
