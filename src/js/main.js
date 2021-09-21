@@ -260,7 +260,6 @@ $( document ).ready(function() {
       $('body').addClass('fixed');
     });
   }
-
   btnPopup('.js-btn-popup');
 
   //btn-close close popup
@@ -271,10 +270,21 @@ $( document ).ready(function() {
       let target = event.target.closest('.popup');
       $(target).fadeOut();
       $('body').removeClass('fixed');
-    })
-  }
-
+    });
+  };
   btnClose('.popup__close');
+
+
+  //spoiler-open on checkout
+  function btnSpoiler(btn) {
+    $(btn).on('click', function (event) {
+      event.preventDefault();
+      let target = event.target.closest('.shopping-cart__spoiler-title');
+      $(target).toggleClass('opened');
+      $(target.getAttribute('data-target')).toggleClass('opened');
+    });
+  };
+  btnSpoiler('.js-spoiler-btn');
 
 });
 
