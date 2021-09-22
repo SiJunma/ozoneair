@@ -663,6 +663,8 @@ h6 {
         max-width: 230px;
         height: 255px;
         width: 100%;
+        display: flex;
+        justify-content: center;
 
         img {
             width: auto;
@@ -1034,6 +1036,7 @@ h6 {
         height: 260px;
         display: flex;
         align-items: flex-end;
+        justify-content: center;
     }
 }
 
