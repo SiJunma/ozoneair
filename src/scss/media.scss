@@ -735,6 +735,10 @@
         margin-left: 20px;
     }
 
+    .subscription__content {
+        padding-left: 70px;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -1167,6 +1171,21 @@
 
         &__action {
             margin-left: 15px;
+        }
+    }
+
+    .subscription {
+        &-wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__title {
+            margin-bottom: 40px;
+        }
+
+        &__content {
+            padding-left: 0;
         }
     }
 
